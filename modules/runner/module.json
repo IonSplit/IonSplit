@@ -1,0 +1,13 @@
+{
+  "name": "runner",
+  "version": "1.0.0",
+  "description": "main ionsplit extension for speedrunning",
+  "main": "runner.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonSplit/IonSplit.git"
+  },
+  "author": "IonSplit",
+  "license": "MIT",
+  "homepage": "https://github.com/IonSplit/IonSplit",
+}

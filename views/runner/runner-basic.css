@@ -80,6 +80,7 @@ body {
   width: 100%;
   height: 200px;
   overflow-y: scroll;
+  border-bottom: 1px solid #353a41;
 }
 
 .component-runner-splits .table {
@@ -95,14 +96,36 @@ body {
   background-color: #353a41;
 }
 
+.component-runner-splits .table tr.selected {
+  background-color: #688cbf;
+}
+
 .component-runner-splits .table tr td {
-  padding: 8px;
-  vertical-align: top;
-  font-size: 13px;
+  padding: 8px 4px;
+  vertical-align: middle;
+  font-size: 14px;
   border: none;
   cursor: pointer;
 }
+.component-runner-splits .table tr td:last-child {
+  text-align: right;
+}
 
+.component-runner-splits .table tr td:nth-child(2) {
+  text-align: left;
+}
+
+.component-runner-splits .table tr td:nth-child(3) {
+  text-align: right;
+}
+
+.component-runner-splits .table tr td.icon {
+  padding-left: 8px;
+}
+.component-runner-splits .table tr td img {
+  width: 16px;
+  height: 16px;
+}
 
 /**
  * Runner Timer
