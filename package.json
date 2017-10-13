@@ -1,0 +1,23 @@
+{
+  "name": "ionsplit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonSplit/IonSplit.git"
+  },
+  "author": "Ahmed Nefzaoui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonSplit/IonSplit/issues"
+  },
+  "homepage": "https://github.com/IonSplit/IonSplit#readme",
+  "devDependencies": {
+    "electron": "^1.7.9"
+  }
+}
