@@ -6,6 +6,8 @@ const BrowserWindow = electron.BrowserWindow
 
 const path = require('path')
 const url = require('url')
+const {ipcMain} = require('electron');
+
 
 const ml = require('./modules/module_loader.js');
 
@@ -35,11 +37,10 @@ function createWindow() {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+  let mli = new ml();
+  mli.init();
 
-  /**
-   * let mli = new ml();
-   *
-   */
+
 }
 
 // This method will be called when Electron has finished
