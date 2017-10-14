@@ -1,3 +1,3 @@
 const electron = require('electron');
 const {ipcRenderer} = require('electron');
-const mp = require('./main_process.js');
+const addons_parser = require('./addons_parser.js');
