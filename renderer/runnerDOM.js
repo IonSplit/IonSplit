@@ -1,19 +1,23 @@
 'use strict';
 
-let globalDOM = document.getElementById('global-components');
+let runnerTitleDOM = document.getElementById('runner-title');
+let globalComponentsDOM = document.getElementById('global-components');
 
 let runnerDOM = {
   emptyDOMTree: function() {
-    globalDOM.innerHTML = '';
+    globalComponentsDOM.innerHTML = '';
   },
   add: function(DOM) {
-    globalDOM.innerHTML += DOM;
+    globalComponentsDOM.innerHTML += DOM;
   },
   remove: function(selector) {
-    globalDOM.querySelector(selector).innerHTML = '';
+    globalComponentsDOM.querySelector(selector).innerHTML = '';
   },
   update: function(selector, DOM) {
-    globalDOM.querySelector(selector).innerHTML = DOM;
+    globalComponentsDOM.querySelector(selector).innerHTML = DOM;
+  },
+  setRunTitle: function (title) {
+    runnerTitleDOM.innerHTML = title;
   }
 }
 
