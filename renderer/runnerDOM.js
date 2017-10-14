@@ -1,14 +1,19 @@
 'use strict';
 
-var runnerDOM = {
+let globalDOM = document.getElementById('global-components');
+
+let runnerDOM = {
+  emptyDOMTree: function() {
+    globalDOM.innerHTML = '';
+  },
   add: function(DOM) {
-    // FIXME:
+    globalDOM.innerHTML += DOM;
   },
   remove: function(selector) {
-    // FIXME:
+    globalDOM.querySelector(selector).innerHTML = '';
   },
   update: function(selector, DOM) {
-    // FIXME:
+    globalDOM.querySelector(selector).innerHTML = DOM;
   }
 }
 
