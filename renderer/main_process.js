@@ -1,4 +1,4 @@
-const module_loader = require('../modules/module_loader.js');
+const addon_loader = require('../addons/addon_loader.js');
 
-let mlfp = new module_loader();
-document.getElementById('global-components').innerHTML = mlfp.buildDOM();
+let alfp = new addon_loader();
+document.getElementById('global-components').innerHTML = alfp.buildDOM();

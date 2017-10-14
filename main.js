@@ -6,11 +6,8 @@ const BrowserWindow = electron.BrowserWindow
 
 const path = require('path')
 const url = require('url')
-const {ipcMain} = require('electron');
 
-
-const ml = require('./modules/module_loader.js');
-
+const addon_loader = require('./addons/addon_loader.js');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -37,9 +34,9 @@ function createWindow() {
     // when you should delete the corresponding element.
     mainWindow = null
   })
-  let mli = new ml();
-  mli.init();
 
+  let ml = new addon_loader();
+  ml.init();
 
 }
 

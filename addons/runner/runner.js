@@ -1,8 +1,8 @@
 'use strict';
 /**
- * `module_loader` iterates through the sub folders of `modules`
- * and tries to find a `module.json` in them, after which it
- * adds them to the `modules.json` file that the app uses to
+ * `addon_loader` iterates through the sub folders of `addons`
+ * and tries to find a `addon.json` in them, after which it
+ * generates the `addons.json` file that the app uses to
  * load the addons.
  */
 
