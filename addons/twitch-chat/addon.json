@@ -1,0 +1,13 @@
+{
+  "name": "twitch-chat",
+  "version": "1.0.0",
+  "description": "Twitch chat widget addon for IonSplit",
+  "main": "twitchchat.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonSplit/IonSplit.git"
+  },
+  "author": "IonSplit",
+  "license": "MIT",
+  "homepage": "https://github.com/IonSplit/IonSplit",
+}
