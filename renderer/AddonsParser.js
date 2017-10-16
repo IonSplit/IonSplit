@@ -1,5 +1,5 @@
-const addon_loader = require('../addons/addon_loader.js');
-const runnerDOM = require('./runnerDOM.js');
+const addon_loader = require('../addons/AddonLoader.js');
+const runnerDOM = require('./RunnerDOM.js');
 
 let al = new addon_loader();
 //document.getElementById('global-components').innerHTML = al.buildDOM();

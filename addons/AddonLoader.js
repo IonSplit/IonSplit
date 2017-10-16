@@ -17,17 +17,17 @@
  * Loading addons
  * Currently static, eventually becomes dynamic process.
  */
-const runner = require('./runner/runner.js');
+const Runner = require('./runner/Runner.js');
 
 function ADDON_LOADER() {}
 
 ADDON_LOADER.prototype.init = function() {
   console.log('hi there');
-  runner.init();
+  Runner.init();
 };
 
 ADDON_LOADER.prototype.buildDOM = function() {
-  return runner.buildDOM();
+  return Runner.buildDOM();
 };
 
 ADDON_LOADER.prototype.getAddons = function() {

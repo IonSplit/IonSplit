@@ -3,7 +3,7 @@
 let runnerTitleDOM = document.getElementById('runner-title');
 let globalComponentsDOM = document.getElementById('global-components');
 
-let runnerDOM = {
+let RunnerDOM = {
   emptyDOMTree: function() {
     globalComponentsDOM.innerHTML = '';
   },
@@ -21,4 +21,4 @@ let runnerDOM = {
   }
 }
 
-module.exports = runnerDOM;
+module.exports = RunnerDOM;
